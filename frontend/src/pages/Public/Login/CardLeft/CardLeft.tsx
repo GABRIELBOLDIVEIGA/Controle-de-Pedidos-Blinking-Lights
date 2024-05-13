@@ -1,6 +1,6 @@
 import { TypographyH2 } from "@/components/typography/typographyH2";
 import { TextGenerateEffect } from "@/components/TextGenerateEffect/TextGenerateEffect";
-import logo from "@/assets/kmb_logo.png";
+import logo2 from "@/assets/nova logo 2.png";
 import { cn } from "@/lib/utils";
 
 interface IProps {
@@ -16,16 +16,16 @@ export const CardLeft = ({ className }: IProps) => {
       )}
     >
       <div>
-        <TypographyH2>KMB Rodízios</TypographyH2>
+        <TypographyH2>Controle de Pedidos Blinking-Lights</TypographyH2>
       </div>
       <div className="flex h-full w-full items-center justify-center">
         <div className="dark:ring-none flex h-[45%] w-[70%] justify-center overflow-hidden rounded-full">
-          <img src={logo} className="container " />
+          <img src={logo2} className="container rounded-full" />
           {/* <img src={import.meta.env.VITE_LOGO} className="container " /> */}
         </div>
       </div>
       <div>
-        <TextGenerateEffect words="A indústria de Rodízios que mais cresce no Brasil." />
+        <TextGenerateEffect words="A solução ideal para sua empresa." />
       </div>
     </section>
   );

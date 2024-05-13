@@ -74,7 +74,7 @@ export const columns: ColumnDef<PedidoTable>[] = [
     cell: ({ row }) => (
       <div className="max-w-[300px] text-wrap text-center capitalize">
         <ScrollArea className="h-[22px]">
-          <p className="text-left">{row.original.cliente}</p>
+          <p className="text-left blur-[2px]">{row.original.cliente}</p>
         </ScrollArea>
       </div>
     ),
@@ -96,7 +96,7 @@ export const columns: ColumnDef<PedidoTable>[] = [
     cell: ({ row }) => (
       <div className="max-w-[300px] text-wrap text-center capitalize">
         <ScrollArea className="h-[22px]">
-          <p className="text-left">{row.original.cnpj}</p>
+          <p className="text-left blur-[2px]">{row.original.cnpj}</p>
         </ScrollArea>
       </div>
     ),
@@ -115,7 +115,9 @@ export const columns: ColumnDef<PedidoTable>[] = [
         </div>
       );
     },
-    cell: ({ row }) => <div className="capitalize">{row.original.usuario}</div>,
+    cell: ({ row }) => (
+      <div className="capitalize blur-[2px]">{row.original.usuario}</div>
+    ),
   },
   {
     id: "total",

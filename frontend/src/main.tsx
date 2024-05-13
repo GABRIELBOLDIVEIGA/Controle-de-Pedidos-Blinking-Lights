@@ -6,7 +6,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { AuthProvider } from "./context/Auth/AuthProvider.tsx";
 import { RouterProvider } from "react-router-dom";
 import { routes } from "./routes/routes.tsx";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { queryClient } from "./lib/react-query/queryClient.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </AuthProvider>
         {/* </div> */}
       </ThemeProvider>
-      <ReactQueryDevtools />
+      {/* <ReactQueryDevtools /> */}
     </QueryClientProvider>
   </React.StrictMode>,
 );

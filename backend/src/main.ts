@@ -36,7 +36,7 @@ async function bootstrap() {
 
   //Swagger
   const config = new DocumentBuilder()
-    .setTitle('API Rest - KMB')
+    .setTitle('Controle de Pedidos Blinking-Lights')
     .setDescription(
       'Backend desenvolvido em NestJS com Mongoose, TypeScript e MongoDB',
     )
