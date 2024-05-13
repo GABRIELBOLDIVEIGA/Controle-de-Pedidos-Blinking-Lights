@@ -1,0 +1,5 @@
+export enum Etapa {
+  ORCAMENTO = 'ORCAMENTO',
+  ANALISE = 'ANALISE',
+  FINALIZADO = 'FINALIZADO',
+}
